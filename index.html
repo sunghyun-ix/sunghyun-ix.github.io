@@ -3,606 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="">
-    <title>Sung Hyun Lee - Media Psychology Researcher and Media Experience Strategic Designer</title>
-    
-    <!-- Favicon -->
+    <title>Sung Hyun Lee &mdash; Media Psychology &amp; Human-AI Communication</title>
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%23b509ac'/%3E%3Ctext x='50' y='50' font-family='Arial, sans-serif' font-size='40' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='central'%3ESHL%3C/text%3E%3C/svg%3E">
-    
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.2/css/academicons.min.css" rel="stylesheet">
-    <style>
-        :root {
-            --global-bg-color: #ffffff;
-            --global-code-bg-color: #ecf0f1;
-            --global-text-color: #000000;
-            --global-text-color-light: #828282;
-            --global-theme-color: #b509ac;
-            --global-hover-color: #b509ac;
-            --global-footer-bg-color: #424242;
-            --global-footer-text-color: #e8e8e8;
-            --global-footer-link-color: #ffffff;
-            --global-distill-app-color: #828282;
-            --global-divider-color: #424242;
-            --global-card-bg-color: #ffffff;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        .loading {
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        .loaded {
-            opacity: 1;
-        }
-
-        html {
-            scroll-behavior: auto !important;
-            scroll-padding-top: 0 !important;
-        }
-
-        body {
-            font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: var(--global-text-color);
-            background-color: var(--global-bg-color);
-            font-size: 16px;
-            overflow-x: hidden;
-            scroll-behavior: auto !important;
-        }
-
-        body, html {
-            scroll-padding-top: 0 !important;
-            scroll-margin-top: 0 !important;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        .profile-section {
-            background: var(--global-bg-color);
-            padding: 3rem 0 2rem 0;
-            border-bottom: 1px solid var(--global-divider-color);
-            margin-bottom: 0;
-        }
-
-        .profile-content {
-            display: flex;
-            align-items: flex-start;
-            gap: 2rem;
-            flex-wrap: wrap;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-
-        .profile-img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            object-fit: cover;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            flex-shrink: 0;
-        }
-
-        .profile-text {
-            flex: 1;
-            min-width: 300px;
-        }
-
-        .profile-text h1 {
-            font-size: 3rem;
-            font-weight: 300;
-            margin-bottom: 0.5rem;
-            color: var(--global-text-color);
-        }
-
-        .profile-text .title {
-            font-size: 1.2rem;
-            color: var(--global-text-color-light);
-            margin-bottom: 1.5rem;
-            font-weight: 300;
-        }
-
-        .profile-text .description {
-            font-size: 1.1rem;
-            line-height: 1.7;
-            color: var(--global-text-color);
-            margin-bottom: 1.5rem;
-        }
-
-        .contact-info {
-            display: flex;
-            gap: 1.5rem;
-            flex-wrap: wrap;
-            align-items: center;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            color: var(--global-text-color-light);
-        }
-
-        .contact-item i {
-            color: var(--global-theme-color);
-            width: 16px;
-        }
-
-        .academic-links {
-            display: flex;
-            gap: 1rem;
-            margin-top: 1rem;
-            flex-wrap: wrap;
-        }
-
-        .academic-link {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            color: var(--global-theme-color);
-            text-decoration: none;
-            padding: 0.5rem 1rem;
-            border: 1px solid var(--global-theme-color);
-            border-radius: 4px;
-            transition: all 0.2s ease;
-            font-size: 0.9rem;
-        }
-
-        .academic-link:hover {
-            background-color: var(--global-theme-color);
-            color: white;
-        }
-
-        nav {
-            background: var(--global-bg-color);
-            padding: 1rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            border-bottom: 1px solid var(--global-divider-color);
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 2rem;
-            justify-content: center;
-            flex-wrap: wrap;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: var(--global-text-color);
-            font-weight: 400;
-            padding: 0.5rem 1rem;
-            border-radius: 4px;
-            transition: all 0.2s ease;
-            position: relative;
-        }
-
-        nav a:hover {
-            color: var(--global-hover-color);
-        }
-
-        nav a.active {
-            color: var(--global-theme-color);
-            font-weight: 500;
-        }
-
-        nav a.active::after {
-            content: '';
-            position: absolute;
-            bottom: -1rem;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 30px;
-            height: 2px;
-            background-color: var(--global-theme-color);
-        }
-
-        main {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
-        section {
-            background: var(--global-card-bg-color);
-            margin-bottom: 3rem;
-            padding: 2.5rem;
-            border-radius: 6px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-        }
-
-        h2 {
-            color: var(--global-text-color);
-            margin-bottom: 1.5rem;
-            font-size: 2rem;
-            font-weight: 400;
-            position: relative;
-            padding-bottom: 0.5rem;
-        }
-
-        h2::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 50px;
-            height: 2px;
-            background-color: var(--global-theme-color);
-        }
-
-        h3 {
-            color: var(--global-text-color);
-            margin-bottom: 1rem;
-            margin-top: 2rem;
-            font-size: 1.4rem;
-            font-weight: 500;
-        }
-
-        p {
-            margin-bottom: 1rem;
-            color: var(--global-text-color);
-            line-height: 1.7;
-        }
-
-        .research-interests {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-            margin-top: 1.5rem;
-        }
-
-        .interest-card {
-            background: var(--global-code-bg-color);
-            padding: 1.5rem;
-            border-radius: 6px;
-            border-left: 4px solid var(--global-theme-color);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-
-        .interest-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-
-        .publication {
-            margin-bottom: 2rem;
-            padding: 1.5rem;
-            background: var(--global-code-bg-color);
-            border-radius: 6px;
-            border-left: 4px solid var(--global-theme-color);
-        }
-
-        .publication-title {
-            font-weight: 600;
-            color: var(--global-text-color);
-            margin-bottom: 0.5rem;
-            font-size: 1.1rem;
-        }
-
-        .publication-authors {
-            color: var(--global-text-color);
-            margin-bottom: 0.3rem;
-        }
-
-        .publication-journal {
-            color: var(--global-text-color);
-            font-style: italic;
-            margin-bottom: 0.8rem;
-            font-size: 0.95rem;
-        }
-
-        .publication-links {
-            margin-bottom: 0.8rem;
-        }
-
-        .publication-links a {
-            color: var(--global-theme-color);
-            text-decoration: underline;
-            margin-right: 1rem;
-        }
-
-        .publication-details {
-            color: var(--global-text-color-light);
-            font-style: italic;
-            margin-bottom: 0.8rem;
-            font-size: 0.95rem;
-        }
-
-        .publication-abstract {
-            color: var(--global-text-color);
-            font-size: 0.95rem;
-            line-height: 1.6;
-            margin-top: 0.8rem;
-            padding: 1rem;
-            background: var(--global-bg-color);
-            border-radius: 4px;
-            border-left: 3px solid var(--global-theme-color);
-            display: none;
-        }
-
-        .cv-section {
-            margin-bottom: 2.5rem;
-        }
-
-        .cv-item {
-            margin-bottom: 1.5rem;
-            padding: 1rem;
-            background: var(--global-code-bg-color);
-            border-radius: 6px;
-            border-left: 4px solid var(--global-theme-color);
-        }
-
-        .cv-date {
-            font-weight: 600;
-            color: var(--global-theme-color);
-            font-size: 0.9rem;
-            margin-bottom: 0.3rem;
-        }
-
-        .cv-title {
-            font-weight: 600;
-            color: var(--global-text-color);
-            margin-bottom: 0.3rem;
-        }
-
-        .cv-institution {
-            color: var(--global-text-color-light);
-            margin-bottom: 0.5rem;
-        }
-
-        .cv-description {
-            color: var(--global-text-color);
-            font-size: 0.95rem;
-            line-height: 1.6;
-        }
-
-        .teaching-course {
-            background: var(--global-code-bg-color);
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            border-radius: 6px;
-            border-left: 4px solid var(--global-theme-color);
-        }
-
-        .course-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 1rem;
-            flex-wrap: wrap;
-        }
-
-        .course-title {
-            font-weight: 600;
-            color: var(--global-text-color);
-            font-size: 1.2rem;
-        }
-
-        .course-details {
-            color: var(--global-text-color-light);
-            font-size: 0.9rem;
-        }
-
-        .project-item {
-            background: var(--global-code-bg-color);
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            border-radius: 6px;
-            border-left: 4px solid var(--global-theme-color);
-        }
-
-        .project-title {
-            font-weight: 600;
-            color: var(--global-text-color);
-            font-size: 1.2rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .project-details {
-            color: var(--global-text-color-light);
-            font-size: 0.9rem;
-            margin-bottom: 1rem;
-        }
-
-        .project-description {
-            color: var(--global-text-color);
-            line-height: 1.6;
-        }
-
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            margin-bottom: 1.5rem;
-            flex-wrap: wrap;
-        }
-
-        .social-links a {
-            color: var(--global-footer-text-color);
-            text-decoration: none;
-            padding: 0.5rem 1rem;
-            border-radius: 4px;
-            background: rgba(255,255,255,0.1);
-            transition: all 0.2s ease;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .social-links a:hover {
-            background: rgba(255,255,255,0.2);
-            transform: translateY(-2px);
-        }
-
-        footer {
-            background: var(--global-bg-color);
-            color: var(--global-text-color);
-            text-align: center;
-            padding: 3rem 0;
-            margin-top: 4rem;
-            border-top: 1px solid var(--global-divider-color);
-        }
-
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-
-        .theme-toggle {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background: var(--global-theme-color);
-            color: white;
-            border: none;
-            border-radius: 50%;
-            width: 45px;
-            height: 45px;
-            cursor: pointer;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-            transition: all 0.2s ease;
-            z-index: 1000;
-        }
-
-        .theme-toggle:hover {
-            transform: scale(1.1);
-        }
-
-        [data-theme="dark"] {
-            --global-bg-color: #1a1a1a;
-            --global-text-color: #e8e8e8;
-            --global-text-color-light: #a0a0a0;
-            --global-card-bg-color: #2a2a2a;
-            --global-code-bg-color: #3a3a3a;
-            --global-divider-color: #404040;
-        }
-
-        .abstract-toggle {
-            color: var(--global-theme-color);
-            text-decoration: underline;
-            cursor: pointer;
-            border: none;
-            background: none;
-            font: inherit;
-            padding: 0;
-            margin-left: 0;
-        }
-
-        .abstract-toggle:hover {
-            color: var(--global-hover-color);
-        }
-
-        @media (max-width: 768px) {
-            .profile-content {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-                padding: 0 1rem;
-            }
-
-            .profile-text h1 {
-                font-size: 2.2rem;
-            }
-
-            nav ul {
-                flex-direction: column;
-                align-items: center;
-                padding: 0 1rem;
-                gap: 1rem;
-            }
-
-            main {
-                padding: 1rem;
-            }
-
-            section {
-                padding: 1.5rem;
-            }
-
-            .research-interests {
-                grid-template-columns: 1fr;
-            }
-
-            .course-header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .social-links {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .theme-toggle {
-                top: 10px;
-                right: 10px;
-                width: 40px;
-                height: 40px;
-            }
-
-            .academic-links {
-                justify-content: center;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .profile-text h1 {
-                font-size: 1.8rem;
-            }
-
-            h2 {
-                font-size: 1.6rem;
-            }
-        }
-    </style>
+    <link href="assets/css/site.css" rel="stylesheet">
 </head>
-<body data-theme="light" class="loading">
+<body data-theme="light">
     <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
         <i class="fas fa-moon" id="theme-icon"></i>
     </button>
 
     <div class="profile-section">
         <div class="profile-content">
-            <img src="assets/img/profile.jpeg" alt="Sung Hyun Lee Profile Photo" class="profile-img">
+            <img src="assets/img/profile.jpeg" alt="Sung Hyun Lee" class="profile-img">
             <div class="profile-text">
                 <h1>Sung Hyun Lee</h1>
                 <div class="title">Ph.D. Candidate | The Media School, Indiana University Bloomington</div>
-                <div class="description">
-                </div>
                 <div class="contact-info">
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
-                        <span>sunghlee@iu.edu</span>
+                        <span><a href="mailto:sunghlee@iu.edu">sunghlee@iu.edu</a></span>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-download"></i>
-                        <span><a href="assets/pdf/Sung_Hyun_Lee_CV_web_080426.pdf" target="_blank" style="color: inherit; text-decoration: none;">Download CV</a></span>
+                        <span><a href="assets/pdf/Sung_Hyun_Lee_CV_web_080426.pdf" target="_blank">Download CV</a></span>
                     </div>
                     <div class="contact-item">
                         <i class="ai ai-google-scholar"></i>
-                        <span><a href="https://scholar.google.com/citations?hl=en&user=sCkB5fIAAAAJ" target="_blank" style="color: inherit; text-decoration: none;">Google Scholar</a></span>
+                        <span><a href="https://scholar.google.com/citations?hl=en&amp;user=sCkB5fIAAAAJ" target="_blank">Google Scholar</a></span>
                     </div>
                     <div class="contact-item">
                         <i class="fab fa-linkedin"></i>
-                        <span><a href="https://linkedin.com/in/lena-sunghyun-lee" style="color: inherit; text-decoration: none;">LinkedIn</a></span>
+                        <span><a href="https://linkedin.com/in/lena-sunghyun-lee" target="_blank">LinkedIn</a></span>
                     </div>
                 </div>
             </div>
@@ -611,421 +44,109 @@
 
     <nav>
         <ul>
-            <li><a href="#top">Home</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#teaching">Teaching</a></li>
-            <li><a href="#professional-projects">Professional Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="projects.html">Professional Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
-    <div id="top"></div>
     <main>
-        <section id="about">
+        <section>
             <h2>Hello</h2>
-            <p>I'm Sung Hyun "Sung". I am a PhD candidate in The Media School at Indiana University, with a minor in Human-Computer Interaction/Design. </p>
-            <p>I study how people judge and form relationships with communicators that offer only limited cues, and how those judgments shape trust, self-disclosure, and consumer behavior. My dissertation asks why people disclose personal information to AI systems faster and more deeply than to other people, and what that means for us. As a mixed-method scholar, I work with lab experiments, surveys, computational text analysis, and in-depth interviews. </p>
-            <p> Before graduate school, I spent thirteen years in Korean media and entertainment. At CJ Corporation and CJ ENM, I led brand strategy and consumer experience design across theme park development, media commerce, and global campaigns including KCON. All of my work was about how audiences encounter unfamiliar(a.k.a something new) content and decide whether to share their time and passion in it—my academic journey is also on the line with this. </p>
-            <div style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--global-divider-color); color: var(--global-text-color-light); font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem;">
-                <i class="fas fa-calendar-alt" style="color: var(--global-theme-color);"></i>
-                <span>Last updated: August 01, 2026</span>
-            </div>
+            <p>I'm Sung Hyun &ldquo;Sung&rdquo;. I am a PhD candidate in The Media School at Indiana
+            University, with a minor in Human-Computer Interaction/Design.</p>
+
+            <p>I study how people judge and form relationships with communicators that offer only
+            limited cues, and how those judgments shape trust, self-disclosure, and consumer behavior.
+            My dissertation asks why people disclose personal information to AI systems faster and more
+            deeply than to other people, and what that means for us. As a mixed-method scholar, I work
+            with lab experiments, surveys, computational text analysis, and in-depth interviews.</p>
+
+            <p>Before graduate school, I spent thirteen years in Korean media and entertainment. At CJ
+            Corporation and CJ ENM, I led brand strategy and consumer experience design across theme
+            park development, media commerce, and global campaigns including KCON. All of my work was
+            about how audiences encounter unfamiliar (a.k.a. something new) content and decide whether
+            to share their time and passion in it &mdash; my academic journey is also on the line with
+            this.</p>
         </section>
 
-        <section id="publications">
-            <h2>Selected Publications</h2>
-            
-            <p>Below are my highlighted works. You can also read my full <a href="assets/pdf/Sung_Hyun_Lee_CV_web_080426.pdf" target="_blank" style="color: var(--global-theme-color); text-decoration: underline;">CV</a>, which includes a full list of publications, including journal articles, conference proceedings, non-archival conference papers/posters, and book chapters.</p>
+        <section>
+            <h2>Currently</h2>
+            <p class="page-intro">Three things on my desk right now.</p>
 
-            <div class="publication">
-                <div class="publication-title">Twitch vs YouTube: Exploring how synchronicity is associated with social interaction and positive emotion among gaming video viewers</div>
-                <div class="publication-authors">Chae, S. W., Alberta, M & Lee, S. H.</div>
-                <div class="publication-journal">Entertainment Computing, 2025</div>
-                <div class="publication-links">
-                    <a href="assets/pdf/chae et al., entertainment computing.pdf" target="_blank">pdf</a>
-                    <button class="abstract-toggle" onclick="toggleAbstract('abstract6')">nutshell description</button>
-                </div>
-                <div id="abstract6" class="publication-abstract">This study explores how synchronicity is associated with users' social interaction and positive emotion when watching gaming content on video-based social media platforms. YouTube and Twitch were selected as comparable venues wherein asynchronous and synchronous communication can be observed, respectively. To control the effect of video content, we found a gaming video on YouTube, the content of which had been originally streamed on Twitch. From the identical videos on the two platforms, the asynchronous comments on YouTube and the synchronous chat messages on Twitch were collected. We analyzed the two data sets using the text analysis program LIWC. The results showed that users are more likely to use social words in the asynchronous setting than in the synchronous setting. Meanwhile, positive emotion was more frequently observed in Twitch's synchronous texts compared to YouTube's asynchronous texts. These findings suggest the possibility that Twitch users are more like eSports spectators than chatters.</div>
-            </div>
-            
-            <div class="publication">
-                <div class="publication-title">Beyond Prompt Engineering: Exploring Collaborative Dialogue with GenAI for Problem-Solving</div>
-                <div class="publication-authors">Lee, S. H., Velez, J. A., & Noh, D.</div>
-                <div class="publication-journal">Cyberpsychology, Behavior, and Social Networking, 2025</div>
-                <div class="publication-links">
-                    <a href="assets/pdf/Lee-et-al-2025-beyond-prompt-engineering-exploring-collaborative-dialogue-with-generative-ai-for-problem-solving.pdf" target="_blank">pdf</a>
-                    <a href="https://www.liebertpub.com/doi/abs/10.1089/cyber.2024.0614" target="_blank">website</a>
-                    <button class="abstract-toggle" onclick="toggleAbstract('abstract1')">nutshell description</button>
-                </div>
-                <div id="abstract1" class="publication-abstract">This study investigated how different discourse practices (construction, co-construction, and constructive conflict) in human-AI interaction influence collaborative problem-solving with ChatGPT on creative writing tasks. Discourse practices (how humans talk to the AI) significantly predict shared cognition (finding common ground). Shared cognition mediates the link between discourse practices and perceived team effectiveness. Shared cognition positively influences the intention to continue using ChatGPT (in line with the Technology Acceptance Model). The study suggest that human-to-human communication principles are vital for effective human-AI collaboration. The study proposes that ChatGPT may be capable of mirroring these positive discourse practices, opening the door to optimizing dialogue beyond simple prompt engineering.</div>
+            <div class="card">
+                <div class="eyebrow">Dissertation</div>
+                <h4>The Safe Stranger: Self-Disclosure and Trust in Human&ndash;AI Communication</h4>
+                <div class="card-meta">Advisor: John A. Velez &middot; The Media School, Indiana University</div>
+                <p>People often tell an AI system things they would not tell another person, and they
+                get there faster. I argue that recognizing a partner as a machine &mdash; rather than
+                mistaking it for a person &mdash; is itself what lowers the cost of disclosing. The
+                project runs a survey testing that pathway and an experiment manipulating whether an
+                AI responds in an accepting or a critical tone.</p>
             </div>
 
-            <div class="publication">
-                <div class="publication-title">Trolling is in the eye of the beholder: Perceptions of trolling motivations in others predict vigilantism in video games</div>
-                <div class="publication-authors">Velez, J. A., Yoo, H., Smith, X., Lee, S. H., Lin, Y., & Chae, S. W.</div>
-                <div class="publication-journal">Communication Research, 2025</div>
-                <div class="publication-links">
-                    <a href="assets/pdf/velez-et-al-2025-trolling-is-in-the-eye-of-the-beholder-an-attributional-approach-to-predicting-perceptions-of-trolling.pdf" target="_blank">pdf</a>
-                    <a href="https://journals.sagepub.com/doi/abs/10.1177/00936502251334420" target="_blank">website</a>
-                    <button class="abstract-toggle" onclick="toggleAbstract('abstract2')">nutshell description</button>
-                </div>
-                <div id="abstract2" class="publication-abstract">Trolling in online video games, while done by a few, is a growing problem. This study investigated how players perceive trolling and why they retaliate. Players determined if a behavior was trolling by weighing auxiliary cues (like game rules, the target, and community norms) associated with the behavior to attribute malicious motivations. The perception of trolling directly increased a player's desire to retaliate with harassment. The study examine that to better understand the impact of trolling, researchers should focus on players' reactions and their interpretations of others' motivations, rather than just the behavior itself.</div>
+            <div class="card">
+                <div class="eyebrow">In progress</div>
+                <h4>How people talk to AI, and what it gets them</h4>
+                <p>Whether treating an AI as a collaborator rather than a tool changes what people
+                accomplish with it. The first paper appeared in <em>Cyberpsychology, Behavior, and
+                Social Networking</em>; a follow-up study on creative writing tasks is underway.</p>
             </div>
 
-            <div class="publication">
-                <div class="publication-title">Where do cross-cutting discussions happen?: Identifying cross-cutting comments on YouTube videos of political vloggers and mainstream news outlets</div>
-                <div class="publication-authors">Chae, S. W., & Lee, S. H.</div>
-                <div class="publication-journal">PLOS ONE, 2024</div>
-                <div class="publication-links">
-                    <a href="assets/pdf/journal.pone.0302030.pdf" target="_blank">pdf</a>
-                    <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0302030" target="_blank">website</a>
-                    <button class="abstract-toggle" onclick="toggleAbstract('abstract3')">nutshell description</button>
-                </div>
-                <div id="abstract3" class="publication-abstract">This study investigated the extent of political echo chambers versus cross-cutting discussions on YouTube video comments, comparing political vloggers to mainstream news outlets using both manual analysis (for vlogger comments) and NLP classifiers (for mainstream news comments) to determine political leanings. The finding is the proportion of cross-cutting discussions (comments from opposing political views) significantly varied based on both the channel's political leaning and the media type (vlogger vs. mainstream news). That is, results suggest neutral news outlets may serve as a potential venue for cross-cutting discussions.</div>
+            <div class="card">
+                <div class="eyebrow">In progress</div>
+                <h4>Emotional language in online communities about AI</h4>
+                <p>A computational text project comparing how people write about AI companions with how
+                they write about human relationships, testing whether emotional language directed at a
+                mindless partner turns back toward the writer.</p>
             </div>
 
-            <div class="publication">
-                <div class="publication-title">Sharing emotion while spectating video game play: Twitch users' emotional change, COVID-19 pandemic</div>
-                <div class="publication-authors">Chae, S. W. & Lee, S. H.</div>
-                <div class="publication-journal">Computers in Human Behavior, 2022</div>
-                <div class="publication-links">
-                    <a href="assets/pdf/CHB107211.pdf" target="_blank">pdf</a>
-                    <a href="https://www-sciencedirect-com.proxyiub.uits.iu.edu/science/article/pii/S0747563222000334" target="_blank">website</a>
-                    <button class="abstract-toggle" onclick="toggleAbstract('abstract4')">nutshell description</button>
-                </div>
-                <div id="abstract4" class="publication-abstract">Investigates emotional sharing and community building on Twitch during the COVID-19 pandemic, revealing how gaming platforms served as emotional support systems and fostered social connection during isolation.</div>
+            <div class="btn-row" style="margin-top: 2rem;">
+                <a class="btn btn-solid" href="publications.html">See publications</a>
+                <a class="btn" href="assets/pdf/Sung_Hyun_Lee_CV_web_080426.pdf" target="_blank">
+                    <i class="fas fa-file-pdf"></i> Full CV
+                </a>
             </div>
 
-            <div class="publication">
-                <div class="publication-title">We're All in This Together: Legitimacy and Coronavirus-Oriented CSR Messaging</div>
-                <div class="publication-authors">Browning, N., Lee, E., Lee, S. H., & Yang, S. U.</div>
-                <div class="publication-journal">Sustainability, 2022</div>
-                <div class="publication-links">
-                    <a href="assets/pdf/We're All in This Together.pdf" target="_blank">pdf</a>
-                    <a href="https://www.mdpi.com/2071-1050/14/5/2534" target="_blank">website</a>
-                    <button class="abstract-toggle" onclick="toggleAbstract('abstract9')">nutshell description</button>
-                </div>
-                <div id="abstract9" class="publication-abstract">This study investigates how legitimization strategies embedded in CSR messages related to the COVID-19 pandemic influenced multidimensional stakeholder assessments of reputation. The results of this 3 × 2 × 2 experimental survey, which manipulated pragmatic and moral legitimacy using three conditions (self- vs. other- vs. both-oriented messaging); substantive and symbolic management (informative vs. uninformative content); and popularization and standardization approaches (leadership vs. followership), indicate that popularization strategies communicated substantively and standardization strategies communicated symbolically generally yield the greatest reputational gains. More nuanced findings from three-way interaction effects are further discussed, with an emphasis on the role of double-sided messages seeking to simultaneously establish pragmatic and moral legitimacy.</div>
-            </div>
-
-            <h3>Work in Progress</h3>
-            <div class="publication">
-                <div class="publication-title">Exploring the Association between Twitch Streamers' Self-identified Gender and Their Viewers' Linguistic Behavior</div>
-                <div class="publication-authors">Chae, S. W., & Lee, S. H.</div>
-                <div class="publication-journal">Under review</div>
-                <div class="publication-links">
-                    <button class="abstract-toggle" onclick="toggleAbstract('abstract5')">nutshell description</button>
-                </div>
-                <div id="abstract5" class="publication-abstract">Examines the relationship between streamer gender identity and audience linguistic patterns, contributing to understanding of gendered communication in digital entertainment spaces.</div>
-            </div>
-
-            <h3>Recent Conference Presentations</h3>
-            <div class="publication">
-                <div class="publication-title">Trust in the Bylines: Audience Perceptions of AI-Generated News Across Polarized Issues</div>
-                <div class="publication-authors">Moon, J., Lee, S. H.</div>
-                <div class="publication-journal">AEJMC Annual Conference, San Francisco, CA, August 2025</div>
-                <div class="publication-links">
-                    <button class="abstract-toggle" onclick="toggleAbstract('abstract7')">nutshell description</button>
-                </div>
-                <div id="abstract7" class="publication-abstract">Investigates audience trust and credibility perceptions of AI-generated news content, particularly examining how political polarization affects acceptance of automated journalism across different ideological perspectives.</div>
-            </div>
-
-            <div class="publication">
-                <div class="publication-title">How Hallyu/K-Lifestyle stays in your day-industrial insight</div>
-                <div class="publication-authors">Lee, S. H.</div>
-                <div class="publication-journal">IKS Graduate Student Conference, Indiana University, April 2023</div>
-                <div class="publication-links">
-                    <button class="abstract-toggle" onclick="toggleAbstract('abstract8')">nutshell description</button>
-                </div>
-                <div id="abstract8" class="publication-abstract">Explores the integration of Korean cultural content and lifestyle practices in daily routines of global consumers, drawing from industry experience to analyze the sustainable impact of Hallyu beyond entertainment consumption.</div>
-            </div>
-        </section>
-
-        <section id="teaching">
-            <h2>Teaching Experience</h2>
-            
-            <div class="teaching-course">
-                <div class="course-header">
-                    <div class="course-title">Graduate Associate Instructor</div>
-                    <div class="course-details">
-                        <div><strong>Institution:</strong> The Media School, Indiana University</div>
-                        <div><strong>Period:</strong> Fall 2020 - Present</div>
-                    </div>
-                </div>
-                <p><strong>Courses Taught:</strong></p>
-                <ul style="margin-left: 2rem; margin-top: 0.5rem;">
-                    <li>MSCH-A305 Strategic Content Development</li>
-                    <li>MSCH-J360 Fashion, Beauty, and Lifestyle Media</li>
-                    <li>MSCH-C207 Introduction to Media Industry & Management</li>
-                    <li>MSCH-C208 Principles of Public Relations</li>
-                    <li>MSCH-C213 Media Psychology</li>
-                    <li>MSCH-C209 Introduction to Advertising and Integrated Marketing Communication</li>
-                </ul>
-            </div>
-
-            <div class="teaching-course">
-                <div class="course-header">
-                    <div class="course-title">Guest Lecturer</div>
-                    <div class="course-details">
-                        <div><strong>Institution:</strong> The Media School, Indiana University</div>
-                        <div><strong>Period:</strong> Spring 2021 - Fall 2024</div>
-                    </div>
-                </div>
-                <p><strong>Topic:</strong> "Fandom - a community of taste: how Korean-Entertainment content in your lifestyle"</p>
-                <p><strong>Courses:</strong></p>
-                <ul style="margin-left: 2rem; margin-top: 0.5rem;">
-                    <li>MSCH-J360 Fashion, Beauty, and Lifestyle Media (Multiple semesters)</li>
-                    <li>MSCH-J460 Social Media and Fashion, Beauty & Lifestyle</li>
-                    <li>MSCH-J326 Fashion, Beauty, and Lifestyle Media</li>
-                </ul>
-            </div>
-
-    <section id="professional-projects">
-        
-        <h2>Professional Projects</h2>
-        <div class="project-item">
-            <div class="project-title">CJ LIVE CITY Theme Park Development</div>
-            
-                <div class="project-details">
-                    <strong>Role:</strong> Project Manager & CX Strategic Designer | <strong>Period:</strong> Oct 2015 - Jul 2020<br>
-                    <strong>Organization:</strong> CJ LIVE CITY, Seoul, Republic of Korea
-                </div>
-                <div class="project-description">
-                    Led a US$1.5 billion project to develop an innovative offline entertainment platform spanning 330,578m² of land. The project involved creating trans-platform connected experiences that seamlessly integrated online and offline entertainment through ride attractions and interactive technologies. Designed and managed budget allocation for innovative walk-through attractions that combined virtual reality with physical activity, creating immersive visitor experiences using advanced gamification methods. This project represented a groundbreaking approach to entertainment design, blending digital storytelling with physical space to create unprecedented user experiences.
-                </div>
-                <div class="project-links" style="margin-top: 1rem; display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
-                    <div style="display: flex; align-items: center; gap: 0.5rem;">
-                        <i class="fas fa-newspaper" style="color: var(--global-theme-color);"></i>
-                        <span style="font-weight: 500; color: var(--global-text-color);">Media Coverage:</span>
-                    </div>
-                    <a href="https://variety.com/2021/global/asia/dedicated-k-pop-arena-starts-construction-1235101060/" target="_blank" style="color: var(--global-theme-color); text-decoration: underline;">Variety</a>
-                </div>
-            </div>
-
-        <div class="project-item">
-            <div class="project-title">CJ Group Entertainment Ecosystem Branding Strategy</div>
-            
-                <div class="project-details">
-                    <strong>Role:</strong> Sr. Brand Marketing Analyst | <strong>Period:</strong> Jan 2012 - Sep 2015<br>
-                    <strong>Organization:</strong> CJ Corporation, Seoul, Republic of Korea
-                </div>
-                <div class="project-description">
-                    Developed comprehensive branding strategies for CJ Group's extensive entertainment business portfolio, including 15 television channels, ten music labels, film investment & distribution, and multiplex movie theaters. Created and implemented the strategic branding framework for KCON, the world's largest Hallyu (Korean Wave) Convention & Show, successfully expanding the event to eight countries worldwide. This work involved deep analysis of cross-cultural media consumption patterns, audience behavior segmentation, and strategic positioning of Korean entertainment content in global markets. The project significantly contributed to the international expansion of the Korean entertainment industry.
-                </div>
-                <div class="project-links" style="margin-top: 1rem; display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
-                    <div style="display: flex; align-items: center; gap: 0.5rem;">
-                        <i class="fas fa-newspaper" style="color: var(--global-theme-color);"></i>
-                        <span style="font-weight: 500; color: var(--global-text-color);">Media Coverage:</span>
-                    </div>
-                    <a href="https://www.nytimes.com/2015/08/10/arts/music/k-pop-fans-swoon-during-east-coast-kcon.html" target="_blank" style="color: var(--global-theme-color); text-decoration: underline;">New York Times</a>
-                    <a href="https://www.billboard.com/music/music-news/kcon-los-angeles-new-york-attendance-6656778/" target="_blank" style="color: var(--global-theme-color); text-decoration: underline;">Billboard</a>
-                    <a herf="https://en.cj.net/brand-cj/brand-content/" target="_blank" style="color: var(--global-theme-color); text-decoration: underline;">CJ Group</a>                
-                </div>
-            </div>
-
-        <div class="project-item">
-            <div class="project-title">Digital Media Innovation Research</div>
-            
-                <div class="project-details">
-                    <strong>Role:</strong> News Reporter & Industry Analyst | <strong>Period:</strong> Oct 2007 - Jan 2011<br>
-                    <strong>Organization:</strong> The Electronic Times, Seoul, Republic of Korea
-                </div>
-                <div class="project-description">
-                    Conducted extensive investigative journalism and industry analysis at Korea's leading technology and innovation-focused daily newspaper. Produced over 3,500 short articles and 135 feature pieces, specializing in emerging technology trends and their societal impacts. Notable investigative projects included "Digital Aging" (2010), examining the psychological and social implications of rapid technological change on different demographic groups, and "Election-Social media viral effect" (2009), analyzing the impact of social media on political communication and voter behavior. This work provided foundational insights into the intersection of technology, media, and human behavior that continues to inform current research approaches.
-                </div>
-            </div>
-
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
-                <div>
-                    <h3>Get in Touch</h3>
-                    <p>I'd love to hear from you! Whether you're interested in collaboration, have questions about my research, or would like to discuss opportunities, please don't hesitate to reach out.</p>
-                </div>
-                
-                <div>
-                    <h3>Send a Message</h3>
-                    <form id="contactForm" style="display: flex; flex-direction: column; gap: 1rem;">
-                        <div>
-                            <label for="name" style="display: block; margin-bottom: 0.5rem; font-weight: 500; color: var(--global-text-color);">Name *</label>
-                            <input type="text" id="name" name="name" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--global-divider-color); border-radius: 4px; background: var(--global-bg-color); color: var(--global-text-color); font-family: inherit;">
-                        </div>
-                        
-                        <div>
-                            <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: 500; color: var(--global-text-color);">Email *</label>
-                            <input type="email" id="email" name="email" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--global-divider-color); border-radius: 4px; background: var(--global-bg-color); color: var(--global-text-color); font-family: inherit;">
-                        </div>
-                        
-                        <div>
-                            <label for="subject" style="display: block; margin-bottom: 0.5rem; font-weight: 500; color: var(--global-text-color);">Subject</label>
-                            <input type="text" id="subject" name="subject" style="width: 100%; padding: 0.75rem; border: 1px solid var(--global-divider-color); border-radius: 4px; background: var(--global-bg-color); color: var(--global-text-color); font-family: inherit;">
-                        </div>
-                        
-                        <div>
-                            <label for="message" style="display: block; margin-bottom: 0.5rem; font-weight: 500; color: var(--global-text-color);">Message *</label>
-                            <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--global-divider-color); border-radius: 4px; background: var(--global-bg-color); color: var(--global-text-color); font-family: inherit; resize: vertical;"></textarea>
-                        </div>
-                        
-                        <button type="submit" style="background: var(--global-theme-color); color: white; border: none; padding: 0.75rem 1.5rem; border-radius: 4px; cursor: pointer; font-family: inherit; font-size: 1rem; transition: background 0.2s ease;">
-                            <i class="fas fa-paper-plane" style="margin-right: 0.5rem;"></i>
-                            Send Message
-                        </button>
-                    </form>
-                    
-                    <div id="formMessage" style="margin-top: 1rem; padding: 0.75rem; border-radius: 4px; display: none;"></div>
-                </div>
+            <div class="updated">
+                <i class="fas fa-calendar-alt"></i>
+                <span>Last updated: August 05, 2026</span>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Sung Hyun Lee. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="publications.html">Publications</a>
+            <a href="teaching.html">Teaching</a>
+            <a href="projects.html">Professional Projects</a>
+            <a href="contact.html">Contact</a>
+            <a href="assets/pdf/Sung_Hyun_Lee_CV_web_080426.pdf" target="_blank">CV</a>
         </div>
+        <p>&copy; 2026 Sung Hyun Lee. All rights reserved.</p>
     </footer>
 
     <script>
-        (function() {
-            if (window.location.hash) {
-                history.replaceState(null, null, window.location.pathname);
-            }
-            window.scrollTo(0, 0);
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        })();
-
-        window.addEventListener('beforeunload', () => {
-            window.scrollTo(0, 0);
-        });
-        
-        window.addEventListener('load', () => {
-            setTimeout(() => {
-                window.scrollTo(0, 0);
-                document.body.scrollTop = 0;
-                document.documentElement.scrollTop = 0;
-            }, 50);
-        });
-
-        document.addEventListener('DOMContentLoaded', () => {
-            window.scrollTo(0, 0);
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-            
-            setTimeout(() => {
-                document.body.classList.remove('loading');
-                document.body.classList.add('loaded');
-            }, 200);
-        });
-
-        let preventScroll = true;
-        setTimeout(() => {
-            preventScroll = false;
-        }, 2000);
-
-        window.addEventListener('scroll', () => {
-            if (preventScroll) {
-                window.scrollTo(0, 0);
-            }
-        });
-
         function toggleTheme() {
             const body = document.body;
-            const themeIcon = document.getElementById('theme-icon');
-            
-            if (body.getAttribute('data-theme') === 'dark') {
-                body.setAttribute('data-theme', 'light');
-                themeIcon.className = 'fas fa-moon';
-                localStorage.setItem('theme', 'light');
-            } else {
-                body.setAttribute('data-theme', 'dark');
-                themeIcon.className = 'fas fa-sun';
-                localStorage.setItem('theme', 'dark');
-            }
+            const icon = document.getElementById('theme-icon');
+            const dark = body.getAttribute('data-theme') === 'dark';
+            body.setAttribute('data-theme', dark ? 'light' : 'dark');
+            icon.className = dark ? 'fas fa-moon' : 'fas fa-sun';
+            localStorage.setItem('theme', dark ? 'light' : 'dark');
         }
-
-        document.addEventListener('DOMContentLoaded', () => {
-            const savedTheme = localStorage.getItem('theme') || 'light';
-            const body = document.body;
-            const themeIcon = document.getElementById('theme-icon');
-            
-            body.setAttribute('data-theme', savedTheme);
-            themeIcon.className = savedTheme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
-        });
-
-        document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                if (!preventScroll) {
-                    e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if (target) {
-                        target.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }
-                }
+        (function () {
+            const saved = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-pref', saved);
+            document.addEventListener('DOMContentLoaded', () => {
+                document.body.setAttribute('data-theme', saved);
+                document.getElementById('theme-icon').className =
+                    saved === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
             });
-        });
-
-        window.addEventListener('scroll', () => {
-            let current = '';
-            const sections = document.querySelectorAll('section');
-            
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (pageYOffset >= sectionTop - 200) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            document.querySelectorAll('nav a').forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === `#${current}`) {
-                    link.classList.add('active');
-                } else if ((current === 'about' || current === '') && link.getAttribute('href') === '#top') {
-                    link.classList.add('active');
-                }
-            });
-        });
-
-        function toggleAbstract(abstractId) {
-            const abstract = document.getElementById(abstractId);
-            if (abstract.style.display === 'none' || abstract.style.display === '') {
-                abstract.style.display = 'block';
-            } else {
-                abstract.style.display = 'none';
-            }
-        }
-
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const formData = new FormData(this);
-            const name = formData.get('name');
-            const email = formData.get('email');
-            const subject = formData.get('subject');
-            const message = formData.get('message');
-            
-            const mailtoLink = `mailto:sunghlee@iu.edu?subject=${encodeURIComponent(subject || 'Contact from website')}&body=${encodeURIComponent(
-                `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
-            )}`;
-            
-            window.location.href = mailtoLink;
-            
-            const messageDiv = document.getElementById('formMessage');
-            messageDiv.style.display = 'block';
-            messageDiv.style.background = '#d4edda';
-            messageDiv.style.color = '#155724';
-            messageDiv.style.border = '1px solid #c3e6cb';
-            messageDiv.innerHTML = '<i class="fas fa-check-circle" style="margin-right: 0.5rem;"></i>Your default email client should open with the message. If not, please copy the details and send to sunghlee@iu.edu';
-            
-            this.reset();
-            
-            setTimeout(() => {
-                messageDiv.style.display = 'none';
-            }, 5000);
-        });
+        })();
     </script>
 </body>
 </html>
