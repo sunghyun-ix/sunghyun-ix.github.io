@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Media Innovation Research &mdash; Sung Hyun Lee</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%23b509ac'/%3E%3Ctext x='50' y='50' font-family='Arial, sans-serif' font-size='40' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='central'%3ESHL%3C/text%3E%3C/svg%3E">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.2/css/academicons.min.css" rel="stylesheet">
+    <link href="../assets/css/site.css" rel="stylesheet">
+</head>
+<body data-theme="light">
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+        <i class="fas fa-moon" id="theme-icon"></i>
+    </button>
+
+    <div class="page-mast">
+        <a class="home-link" href="../index.html">Sung Hyun Lee</a>
+    </div>
+
+    <nav>
+        <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../publications.html">Publications</a></li>
+                <li><a href="../teaching.html">Teaching</a></li>
+                <li><a href="../projects.html" class="active">Professional Projects</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="project-hero">
+            <div class="eyebrow">Professional Project &middot; 2007&ndash;2011</div>
+            <h1>Digital Media Innovation Research</h1>
+            <div class="meta-row">
+                <span><strong>Role:</strong> News Reporter &amp; Industry Analyst</span>
+                <span><strong>Period:</strong> Oct 2007 &ndash; Jan 2011</span>
+                <span><strong>Organization:</strong> The Electronic Times, Seoul, Republic of Korea</span>
+            </div>
+        </div>
+
+        <section>
+            <h2>Overview</h2>
+            <p>Conducted extensive investigative journalism and industry analysis at Korea's leading technology and innovation-focused daily newspaper. Produced over 3,500 short articles and 135 feature pieces, specializing in emerging technology trends and their societal impacts.</p>
+            <p>Notable investigative projects included &ldquo;Digital Aging&rdquo; (2010), examining the psychological and social implications of rapid technological change on different demographic groups, and &ldquo;Election-Social media viral effect&rdquo; (2009), analyzing the impact of social media on political communication and voter behavior.</p>
+            <p>This work provided foundational insights into the intersection of technology, media, and human behavior that continues to inform current research approaches.</p>
+        </section>
+
+        <section>
+            <h2>At a glance</h2>
+            <ul class="highlights">
+                    <li><strong>3,500+</strong>Short articles published</li>
+                    <li><strong>135</strong>Feature pieces published</li>
+                    <li><strong>2</strong>Long-form investigative series</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Gallery</h2>
+            <div class="gallery" id="gallery">
+                    <figure class="shot" onclick="openLightbox('../assets/img/projects/etnews-01.jpg', 'Digital Aging feature series, 2010')">
+                        <img src="../assets/img/projects/etnews-01.jpg" alt="Digital Aging feature series, 2010" loading="lazy">
+                        <figcaption>&ldquo;Digital Aging&rdquo; feature series, 2010</figcaption>
+                    </figure>
+
+                    <figure class="shot" onclick="openLightbox('../assets/img/projects/etnews-02.jpg', 'Election-Social media viral effect, 2009')">
+                        <img src="../assets/img/projects/etnews-02.jpg" alt="Election-Social media viral effect, 2009" loading="lazy">
+                        <figcaption>&ldquo;Election-Social media viral effect&rdquo;, 2009</figcaption>
+                    </figure>
+
+                    <figure class="shot" onclick="openLightbox('../assets/img/projects/etnews-03.jpg', 'Newsroom and reporting work')">
+                        <img src="../assets/img/projects/etnews-03.jpg" alt="Newsroom and reporting work" loading="lazy">
+                        <figcaption>Newsroom and reporting work</figcaption>
+                    </figure>
+            </div>
+            <div class="gallery-empty" id="gallery-empty" style="display:none;">
+                Photos for this project have not been uploaded yet. Add image files to
+                <code>assets/img/projects/</code> using the file names in this page's source,
+                and they will appear here automatically.
+            </div>
+        </section>
+
+        <p><a class="btn" href="../projects.html"><i class="fas fa-arrow-left"></i> All projects</a></p>
+    </main>
+
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close">&times;</button>
+        <img id="lightbox-img" src="" alt="">
+        <p id="lightbox-caption"></p>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="../index.html">Home</a>
+            <a href="../publications.html">Publications</a>
+            <a href="../teaching.html">Teaching</a>
+            <a href="../projects.html">Professional Projects</a>
+            <a href="../contact.html">Contact</a>
+            <a href="../assets/pdf/Sung_Hyun_Lee_CV_web_080426.pdf" target="_blank">CV</a>
+        </div>
+        <p>&copy; 2026 Sung Hyun Lee. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            const icon = document.getElementById('theme-icon');
+            const dark = body.getAttribute('data-theme') === 'dark';
+            body.setAttribute('data-theme', dark ? 'light' : 'dark');
+            icon.className = dark ? 'fas fa-moon' : 'fas fa-sun';
+            localStorage.setItem('theme', dark ? 'light' : 'dark');
+        }
+        (function () {
+            const saved = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-pref', saved);
+            document.addEventListener('DOMContentLoaded', () => {
+                document.body.setAttribute('data-theme', saved);
+                document.getElementById('theme-icon').className =
+                    saved === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+            });
+        })();
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.shot img').forEach(img => {
+                img.addEventListener('error', () => {
+                    img.closest('.shot').classList.add('missing');
+                    checkGallery();
+                });
+                if (img.complete && img.naturalWidth === 0) {
+                    img.closest('.shot').classList.add('missing');
+                }
+            });
+            checkGallery();
+        });
+
+        function checkGallery() {
+            const gallery = document.getElementById('gallery');
+            if (!gallery) return;
+            const visible = gallery.querySelectorAll('.shot:not(.missing)').length;
+            document.getElementById('gallery-empty').style.display = visible ? 'none' : 'block';
+        }
+
+        function openLightbox(src, caption) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox-caption').textContent = caption;
+            document.getElementById('lightbox').classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('open');
+            document.body.style.overflow = '';
+        }
+
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+    </script>
+</body>
+</html>
