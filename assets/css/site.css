@@ -85,13 +85,26 @@ a { color: var(--global-theme-color); }
 
 /* --- inner page header --------------------------------------------------- */
 .page-mast {
-    max-width: 1000px; margin: 0 auto; padding: 2.5rem 2rem 1.5rem 2rem;
+    max-width: 1000px; margin: 0 auto; padding: 2.25rem 2rem 1.75rem 2rem;
 }
-.page-mast .home-link {
-    color: var(--global-text-color); text-decoration: none;
-    font-size: 1.5rem; font-weight: 300;
+.mast-id {
+    display: inline-flex; align-items: center; gap: 1rem;
+    text-decoration: none; color: var(--global-text-color);
 }
-.page-mast .home-link:hover { color: var(--global-theme-color); }
+.mast-img {
+    width: 62px; height: 62px; border-radius: 50%;
+    object-fit: cover; flex-shrink: 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+}
+.mast-name {
+    display: block; font-size: 1.75rem; font-weight: 300; line-height: 1.2;
+}
+.mast-sub {
+    display: block; margin-top: 0.25rem;
+    font-size: 0.92rem; font-weight: 400;
+    color: var(--global-text-color-light);
+}
+.mast-id:hover .mast-name { color: var(--global-theme-color); }
 
 /* --- navigation ---------------------------------------------------------- */
 nav {
@@ -198,7 +211,7 @@ p { margin-bottom: 1rem; line-height: 1.75; }
     border-radius: 6px;
     border-left: 4px solid var(--global-theme-color);
 }
-.publication-title { font-weight: 600; font-size: 1.1rem; margin-bottom: 0.5rem; }
+.publication-title { font-weight: 400; font-size: 1.1rem; margin-bottom: 0.5rem; line-height: 1.45; }
 .publication-authors { margin-bottom: 0.3rem; }
 .publication-journal {
     font-style: italic; font-size: 0.95rem;
