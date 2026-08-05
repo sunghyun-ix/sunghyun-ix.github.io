@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Projects &mdash; Sung Hyun Lee</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%23b509ac'/%3E%3Ctext x='50' y='50' font-family='Arial, sans-serif' font-size='40' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='central'%3ESHL%3C/text%3E%3C/svg%3E">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.2/css/academicons.min.css" rel="stylesheet">
+    <link href="assets/css/site.css" rel="stylesheet">
+</head>
+<body data-theme="light">
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+        <i class="fas fa-moon" id="theme-icon"></i>
+    </button>
+
+    <div class="page-mast">
+        <a class="home-link" href="index.html">Sung Hyun Lee</a>
+    </div>
+
+    <nav>
+        <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="projects.html" class="active">Professional Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Professional Projects</h2>
+            <p class="page-intro">Thirteen years in Korean media and entertainment, across theme park
+            development, brand strategy, and technology journalism. Open a project to read more and
+            see photos.</p>
+            <div class="project-item">
+                <div class="project-title"><a href="projects/cj-live-city.html">CJ LIVE CITY Theme Park Development</a></div>
+                <div class="project-details">
+                    <strong>Role:</strong> Project Manager &amp; CX Strategic Designer | <strong>Period:</strong> Oct 2015 &ndash; Jul 2020<br>
+                    <strong>Organization:</strong> CJ LIVE CITY, Seoul, Republic of Korea
+                </div>
+                <div class="project-description">Led a US$1.5 billion project to develop an offline entertainment platform spanning 330,578m&sup2; of land, integrating online and offline experiences through ride attractions and interactive technologies.</div>
+                <div class="project-links">
+                    <span class="label"><i class="fas fa-newspaper"></i> Media coverage:</span>
+                    <a href="https://variety.com/2021/global/asia/dedicated-k-pop-arena-starts-construction-1235101060/" target="_blank">Variety</a>
+                </div>
+                <a class="btn" href="projects/cj-live-city.html" style="margin-top: 1.25rem;">
+                    <i class="fas fa-images"></i> View project &amp; photos
+                </a>
+            </div>
+
+            <div class="project-item">
+                <div class="project-title"><a href="projects/cj-branding.html">CJ Group Entertainment Ecosystem Branding Strategy</a></div>
+                <div class="project-details">
+                    <strong>Role:</strong> Sr. Brand Marketing Analyst | <strong>Period:</strong> Jan 2012 &ndash; Sep 2015<br>
+                    <strong>Organization:</strong> CJ Corporation, Seoul, Republic of Korea
+                </div>
+                <div class="project-description">Built the strategic branding framework for KCON, the world's largest Hallyu convention, and expanded it to eight countries while shaping brand strategy across CJ Group's entertainment portfolio.</div>
+                <div class="project-links">
+                    <span class="label"><i class="fas fa-newspaper"></i> Media coverage:</span>
+                    <a href="https://www.nytimes.com/2015/08/10/arts/music/k-pop-fans-swoon-during-east-coast-kcon.html" target="_blank">New York Times</a>
+                    <a href="https://www.billboard.com/music/music-news/kcon-los-angeles-new-york-attendance-6656778/" target="_blank">Billboard</a>
+                    <a href="https://en.cj.net/brand-cj/brand-content/" target="_blank">CJ Group</a>
+                </div>
+                <a class="btn" href="projects/cj-branding.html" style="margin-top: 1.25rem;">
+                    <i class="fas fa-images"></i> View project &amp; photos
+                </a>
+            </div>
+
+            <div class="project-item">
+                <div class="project-title"><a href="projects/electronic-times.html">Digital Media Innovation Research</a></div>
+                <div class="project-details">
+                    <strong>Role:</strong> News Reporter &amp; Industry Analyst | <strong>Period:</strong> Oct 2007 &ndash; Jan 2011<br>
+                    <strong>Organization:</strong> The Electronic Times, Seoul, Republic of Korea
+                </div>
+                <div class="project-description">Covered emerging technology and its social impact at Korea's leading technology daily, producing over 3,500 articles and two long-form investigative series.</div>
+                <a class="btn" href="projects/electronic-times.html" style="margin-top: 1.25rem;">
+                    <i class="fas fa-images"></i> View project &amp; photos
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="publications.html">Publications</a>
+            <a href="teaching.html">Teaching</a>
+            <a href="projects.html">Professional Projects</a>
+            <a href="contact.html">Contact</a>
+            <a href="assets/pdf/Sung_Hyun_Lee_CV_web_080426.pdf" target="_blank">CV</a>
+        </div>
+        <p>&copy; 2026 Sung Hyun Lee. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            const icon = document.getElementById('theme-icon');
+            const dark = body.getAttribute('data-theme') === 'dark';
+            body.setAttribute('data-theme', dark ? 'light' : 'dark');
+            icon.className = dark ? 'fas fa-moon' : 'fas fa-sun';
+            localStorage.setItem('theme', dark ? 'light' : 'dark');
+        }
+        (function () {
+            const saved = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-pref', saved);
+            document.addEventListener('DOMContentLoaded', () => {
+                document.body.setAttribute('data-theme', saved);
+                document.getElementById('theme-icon').className =
+                    saved === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+            });
+        })();
+    </script>
+</body>
+</html>
