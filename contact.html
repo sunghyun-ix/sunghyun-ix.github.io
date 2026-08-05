@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact &mdash; Sung Hyun Lee</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%23b509ac'/%3E%3Ctext x='50' y='50' font-family='Arial, sans-serif' font-size='40' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='central'%3ESHL%3C/text%3E%3C/svg%3E">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.2/css/academicons.min.css" rel="stylesheet">
+    <link href="assets/css/site.css" rel="stylesheet">
+</head>
+<body data-theme="light">
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+        <i class="fas fa-moon" id="theme-icon"></i>
+    </button>
+
+    <div class="page-mast">
+        <a class="home-link" href="index.html">Sung Hyun Lee</a>
+    </div>
+
+    <nav>
+        <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="projects.html">Professional Projects</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Contact</h2>
+            <div class="form-grid">
+                <div>
+                    <h3 style="margin-top:0;">Get in touch</h3>
+                    <p>Whether you're interested in collaboration, have questions about my research,
+                    or would like to discuss opportunities, I'd be glad to hear from you.</p>
+
+                    <div class="contact-info" style="flex-direction: column; align-items: flex-start; gap: 0.85rem; margin-top: 1.5rem;">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span><a href="mailto:sunghlee@iu.edu">sunghlee@iu.edu</a></span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-university"></i>
+                            <span>The Media School, Indiana University Bloomington</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="ai ai-google-scholar"></i>
+                            <span><a href="https://scholar.google.com/citations?hl=en&amp;user=sCkB5fIAAAAJ" target="_blank">Google Scholar</a></span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <span><a href="https://linkedin.com/in/lena-sunghyun-lee" target="_blank">LinkedIn</a></span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-file-pdf"></i>
+                            <span><a href="assets/pdf/Sung_Hyun_Lee_CV_web_080426.pdf" target="_blank">Download CV</a></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 style="margin-top:0;">Send a message</h3>
+                    <form id="contactForm">
+                        <div class="field">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="field">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="field">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject">
+                        </div>
+                        <div class="field">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-solid">
+                            <i class="fas fa-paper-plane"></i> Send message
+                        </button>
+                    </form>
+                    <div id="formMessage"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="publications.html">Publications</a>
+            <a href="teaching.html">Teaching</a>
+            <a href="projects.html">Professional Projects</a>
+            <a href="contact.html">Contact</a>
+            <a href="assets/pdf/Sung_Hyun_Lee_CV_web_080426.pdf" target="_blank">CV</a>
+        </div>
+        <p>&copy; 2026 Sung Hyun Lee. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            const icon = document.getElementById('theme-icon');
+            const dark = body.getAttribute('data-theme') === 'dark';
+            body.setAttribute('data-theme', dark ? 'light' : 'dark');
+            icon.className = dark ? 'fas fa-moon' : 'fas fa-sun';
+            localStorage.setItem('theme', dark ? 'light' : 'dark');
+        }
+        (function () {
+            const saved = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-pref', saved);
+            document.addEventListener('DOMContentLoaded', () => {
+                document.body.setAttribute('data-theme', saved);
+                document.getElementById('theme-icon').className =
+                    saved === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+            });
+        })();
+    </script>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const f = new FormData(this);
+            const link = 'mailto:sunghlee@iu.edu?subject=' +
+                encodeURIComponent(f.get('subject') || 'Contact from website') +
+                '&body=' + encodeURIComponent(
+                    'Name: ' + f.get('name') + '\nEmail: ' + f.get('email') +
+                    '\n\nMessage:\n' + f.get('message'));
+            window.location.href = link;
+
+            const box = document.getElementById('formMessage');
+            box.style.display = 'block';
+            box.style.background = '#d4edda';
+            box.style.color = '#155724';
+            box.style.border = '1px solid #c3e6cb';
+            box.innerHTML = '<i class="fas fa-check-circle" style="margin-right:0.5rem;"></i>' +
+                'Your email app should open with this message. If it does not, please write to sunghlee@iu.edu directly.';
+            this.reset();
+        });
+    </script>
+</body>
+</html>
