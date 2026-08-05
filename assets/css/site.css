@@ -326,29 +326,6 @@ p { margin-bottom: 1rem; line-height: 1.75; }
     background: var(--global-theme-color);
 }
 
-/* --- contact form -------------------------------------------------------- */
-.form-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2.5rem;
-}
-.field { margin-bottom: 1rem; }
-.field label {
-    display: block; margin-bottom: 0.5rem;
-    font-weight: 500; color: var(--global-text-color);
-}
-.field input, .field textarea {
-    width: 100%; padding: 0.75rem;
-    border: 1px solid var(--global-divider-color); border-radius: 4px;
-    background: var(--global-bg-color); color: var(--global-text-color);
-    font-family: inherit; font-size: 1rem;
-}
-.field textarea { resize: vertical; }
-.field input:focus, .field textarea:focus {
-    outline: 2px solid var(--global-theme-color); outline-offset: 0;
-}
-#formMessage { margin-top: 1rem; padding: 0.75rem; border-radius: 4px; display: none; }
-
 /* --- footer -------------------------------------------------------------- */
 footer {
     border-top: 1px solid var(--global-divider-color);
