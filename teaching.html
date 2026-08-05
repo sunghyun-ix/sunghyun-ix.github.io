@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teaching &mdash; Sung Hyun Lee</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%23b509ac'/%3E%3Ctext x='50' y='50' font-family='Arial, sans-serif' font-size='40' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='central'%3ESHL%3C/text%3E%3C/svg%3E">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.2/css/academicons.min.css" rel="stylesheet">
+    <link href="assets/css/site.css" rel="stylesheet">
+</head>
+<body data-theme="light">
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+        <i class="fas fa-moon" id="theme-icon"></i>
+    </button>
+
+    <div class="page-mast">
+        <a class="home-link" href="index.html">Sung Hyun Lee</a>
+    </div>
+
+    <nav>
+        <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="teaching.html" class="active">Teaching</a></li>
+                <li><a href="projects.html">Professional Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Teaching</h2>
+            <p class="page-intro">I have taught advertising, public relations, media psychology, and
+            strategic content courses at The Media School since 2020.</p>
+
+            <div class="card">
+                <div class="eyebrow">Fall 2020 &ndash; present</div>
+                <h4>Graduate Associate Instructor</h4>
+                <div class="card-meta">The Media School, Indiana University Bloomington</div>
+                <p>Courses taught:</p>
+                <ul class="course-list">
+                    <li>MSCH-C209 Introduction to Advertising and Integrated Marketing Communication</li>
+                    <li>MSCH-C208 Principles of Public Relations</li>
+                    <li>MSCH-C213 Media Psychology</li>
+                    <li>MSCH-A305 Strategic Content Development</li>
+                    <li>MSCH-C207 Introduction to Media Industry &amp; Management</li>
+                    <li>MSCH-J360 Fashion, Beauty, and Lifestyle Media</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <div class="eyebrow">Spring 2021 &ndash; Fall 2024</div>
+                <h4>Guest Lecturer</h4>
+                <div class="card-meta">The Media School, Indiana University Bloomington</div>
+                <p><strong>Topic:</strong> &ldquo;Fandom &mdash; a community of taste: how Korean
+                entertainment content lives in your lifestyle&rdquo;</p>
+                <ul class="course-list">
+                    <li>MSCH-J360 Fashion, Beauty, and Lifestyle Media (multiple semesters)</li>
+                    <li>MSCH-J460 Social Media and Fashion, Beauty &amp; Lifestyle</li>
+                    <li>MSCH-J326 Fashion, Beauty, and Lifestyle Media</li>
+                </ul>
+            </div>
+
+            <div class="btn-row" style="margin-top: 2rem;">
+                <a class="btn" href="assets/pdf/Sung_Hyun_Lee_CV_web_080426.pdf" target="_blank">
+                    <i class="fas fa-file-pdf"></i> Full teaching history in my CV
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="publications.html">Publications</a>
+            <a href="teaching.html">Teaching</a>
+            <a href="projects.html">Professional Projects</a>
+            <a href="contact.html">Contact</a>
+            <a href="assets/pdf/Sung_Hyun_Lee_CV_web_080426.pdf" target="_blank">CV</a>
+        </div>
+        <p>&copy; 2026 Sung Hyun Lee. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            const icon = document.getElementById('theme-icon');
+            const dark = body.getAttribute('data-theme') === 'dark';
+            body.setAttribute('data-theme', dark ? 'light' : 'dark');
+            icon.className = dark ? 'fas fa-moon' : 'fas fa-sun';
+            localStorage.setItem('theme', dark ? 'light' : 'dark');
+        }
+        (function () {
+            const saved = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-pref', saved);
+            document.addEventListener('DOMContentLoaded', () => {
+                document.body.setAttribute('data-theme', saved);
+                document.getElementById('theme-icon').className =
+                    saved === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+            });
+        })();
+    </script>
+</body>
+</html>
